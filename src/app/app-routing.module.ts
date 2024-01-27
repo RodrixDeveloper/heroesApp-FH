@@ -4,8 +4,7 @@ import { Error404PageComponent } from './shared/pages/error404-page/error404-pag
 
 const routes: Routes = [
   {
-    path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+    path: 'auth', loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
     path: 'heroes',loadChildren: () => import('./heroes/heroes.module').then((m) => m.HeroesModule),
